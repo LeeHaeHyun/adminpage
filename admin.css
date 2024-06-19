@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+.page-content {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.page-content p {
+    margin-bottom: 15px;
+}
+
+.page-content ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.page-content li {
+    margin-bottom: 5px;
+}
+.menu-item.active {
+    background-color: #555;
+}
+.submenu > div.active {
+    font-weight: bold;
+    color: #ff0000;
+}
+.sidebar {
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu-item {
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.title-area {
+    display: flex;
+    align-items: center;
+}
+
+.title-area i {
+    margin-right: 10px;
+}
+
+.title-area span {
+    flex-grow: 1;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.menu-item.open .arrow {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    display: none;
+    margin-top: 10px;
+    margin-left: 30px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.menu-item.open .submenu {
+    display: block;
+    max-height: 200px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.page-title {
+    margin-top: 0;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.upgrade-btn {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.exit-btn {
+    background-color: #ff69b4;
+    color: #fff;
+}
