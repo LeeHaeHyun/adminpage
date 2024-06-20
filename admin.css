@@ -4,6 +4,253 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.clickable {
+    cursor: pointer;
+    color: blue;
+    transition: all 0.3s ease; /* 부드러운 전환 효과를 위해 */
+}
+
+.clickable:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#service-check table th:first-child {
+    width: 150px; /* 원하는 크기로 조정하세요 */
+}
+.large-input {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.popup-content h3 {
+    margin-top: 0;
+}
+
+.popup-content table {
+    margin-bottom: 20px;
+}
+
+.popup-content button {
+    display: block;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.total-count {
+    margin-right: 10px;
+}
+
+.info-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: #000;
+    border-radius: 10%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #f2f2f2;
+}
+
+.pagination .ellipsis {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.pagination .next {
+    margin-left: 10px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-box select,
+.search-box input[type="text"] {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.search-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.close-btn {
+    margin-top: 20px;
+}
 .page-content {
     font-size: 16px;
     color: #555;
@@ -29,6 +276,12 @@ body {
 .submenu > div.active {
     font-weight: bold;
     color: #ff0000;
+}
+.submenu > div.active {
+    background-color: #555;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 .sidebar {
     width: 300px;
