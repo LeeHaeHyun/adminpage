@@ -1,376 +1,376 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
 }
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th,
 td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 .clickable {
-    cursor: pointer;
-    color: blue;
-    transition: all 0.3s ease; /* 부드러운 전환 효과를 위해 */
+  cursor: pointer;
+  color: blue;
+  transition: all 0.3s ease; /* 부드러운 전환 효과를 위해 */
 }
 
 .clickable:hover {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 textarea {
-    width: 100%;
-    resize: vertical;
+  width: 100%;
+  resize: vertical;
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
 }
 
 input:checked + .slider {
-    background-color: #2196f3;
+  background-color: #2196f3;
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 #service-check table th:first-child {
-    width: 150px; /* 원하는 크기로 조정하세요 */
+  width: 150px; /* 원하는 크기로 조정하세요 */
 }
 .large-input {
-    width: 100%;
-    height: 100px;
-    resize: vertical;
+  width: 100%;
+  height: 100px;
+  resize: vertical;
 }
 .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
 }
 
 .popup-content {
-    background-color: #fff;
-    width: 400px;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 4px;
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
 }
 
 .popup-content h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .popup-content table {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .popup-content button {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 .header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .total-count {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .info-btn {
-    background-color: #ff0000;
-    color: #fff;
-    border: #000;
-    border-radius: 10%;
-    font-size: 15px;
-    font-weight: 500;
+  background-color: #ff0000;
+  color: #fff;
+  border: #000;
+  border-radius: 10%;
+  font-size: 15px;
+  font-weight: 500;
 }
 .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .pagination a {
-    color: #000;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 0 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .pagination a:hover {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .pagination .ellipsis {
-    padding: 5px 10px;
-    margin: 0 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
 }
 
 .pagination .next {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .search-box {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .search-box select,
 .search-box input[type="text"] {
-    margin-right: 10px;
-    padding: 5px;
+  margin-right: 10px;
+  padding: 5px;
 }
 
 .search-btn {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th,
 td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .tooltip {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .tooltip::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color: #000;
-    color: #fff;
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 12px;
-    white-space: nowrap;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .tooltip:hover::before {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
 }
 
 .popup-content {
-    background-color: #fff;
-    width: 400px;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 4px;
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
 }
 
 .close-btn {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .page-content {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 30px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 .page-content p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .page-content ul {
-    margin-bottom: 15px;
-    padding-left: 20px;
+  margin-bottom: 15px;
+  padding-left: 20px;
 }
 
 .page-content li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .menu-item.active {
-    background-color: #555;
+  background-color: #555;
 }
 .submenu > div.active {
-    font-weight: bold;
-    color: #ff0000;
+  font-weight: bold;
+  color: #ff0000;
 }
 .submenu > div.active {
-    background-color: #555;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
+  background-color: #555;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 .sidebar {
-    width: 300px;
-    background-color: #333;
-    color: #fff;
-    height: 100vh;
-    padding: 20px;
+  width: 300px;
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .menu-item {
-    position: relative;
-    padding: 10px 0;
-    cursor: pointer;
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
 }
 
 .title-area {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .title-area i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .title-area span {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .arrow {
-    transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .menu-item.open .arrow {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .submenu {
-    display: none;
-    margin-top: 10px;
-    margin-left: 30px;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
+  display: none;
+  margin-top: 10px;
+  margin-left: 30px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
 }
 
 .menu-item.open .submenu {
-    display: block;
-    max-height: 200px;
+  display: block;
+  max-height: 200px;
 }
 
 .main-content {
-    flex-grow: 1;
-    padding: 20px;
+  flex-grow: 1;
+  padding: 20px;
 }
 
 .page-title {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .buttons {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .buttons button {
-    margin-left: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .edit-btn {
-    background-color: #ff0000;
-    color: #fff;
+  background-color: #ff0000;
+  color: #fff;
 }
 
 .upgrade-btn {
-    background-color: #ff0000;
-    color: #fff;
+  background-color: #ff0000;
+  color: #fff;
 }
 
 .exit-btn {
-    background-color: #ff69b4;
-    color: #fff;
+  background-color: #ff69b4;
+  color: #fff;
 }
