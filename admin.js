@@ -40,6 +40,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.error("Simple certification button not found");
                 }
 
+                // 담당자 목록 테이블의 서비스명 버튼 클릭 이벤트 처리
+                var nettfixnButton = document.querySelector(
+                    "#change-person tbody span[data-menu-id='nettfix-check']"
+                );
+                console.log("Simple certification button:", nettfixnButton);
+                if (nettfixnButton) {
+                    nettfixnButton.addEventListener("click", function () {
+                        var menuId = this.getAttribute("data-menu-id");
+                        console.log("Simple certification button clicked with menuId:", menuId);
+                        loadContent(menuId);
+                    });
+                } else {
+                    console.error("Simple certification button not found");
+                }
+
                 function loadContent(menuId) {
                     console.log("loadContent called with menuId:", menuId);
 
